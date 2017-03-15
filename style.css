@@ -1,35 +1,86 @@
-body {	
-	background: url(https://cdn.pixabay.com/photo/2014/03/28/21/39/color-300343_1280.jpg);
-	background-size: cover;
-	background-position: center;
-	color: white;
-}
-
-#content {
-	text-align: center;
-	padding-top: 25%;
-	color: white;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
-					0px 8px 13px rgba(0,0,0,0.1),
-					0px 18px 23px rgba(0,0,0,0.1);
-}
 html {
 	height: 100%;
 }
 
-hr {
-	width: 400px;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.2)
+#game {
+	margin: 0px;
+	background-color: #232323;
+	font-family: "Roboto", "Avenir", "Montserrat";
 }
 
-h1 {
+.square {
+	width: 30%;
+	margin: 1.66%;
+	padding-bottom: 30%;
+	background-color: purple;
+	float: left;
+	border-radius: 15%;
+	transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+}
+
+#colorDisplay {
+	font-size: 2em;
+}
+
+#messageDisplay {
+	color: black;
+	width: 20%;
+	display: inline-block;
+}
+
+#stripe {
+	background-color: white;
+	text-align: center;
+	height: 30px;
+	color: steelblue;
+}
+
+#squareContainer {
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+#gameStatus {
+	color: white;
+	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	padding: 20px 0;
+	line-height: 1.1;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+button {
+	border: none;
+	font-family: "Roboto", "Avenir", "Montserrat";
+	text-transform: uppercase;
+	height: 100%;
+	background-color: white;
 	font-weight: 700;
-	font-size: 5em;
+	letter-spacing: 1px;
+	outline: none;
+	color: steelblue;
+	font-size: inherit;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 }
 
-#content a {
-	text-shadow: 0px 0px 0px;
+#navigate {
+	margin: 0px;
+}
+
+.selected {
+	background: steelblue;
+	color: white;
+}
+
+button:hover {
+	color: white;
+	background-color: steelblue;
 }
 
 /*
