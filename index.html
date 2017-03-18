@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rahul Patni</title>
-	<link href="style.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Todo List</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<script type="text/javascript" src="assets/js/lib/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<script src="https://use.fontawesome.com/3ebd99ca5a.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 </head>
-
-<body id="game">
+<body>
 
 <nav class="navbar navbar-default" id="navigate">
   <div class="container">
@@ -40,28 +39,22 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<h1 id="gameStatus">The Great <br><span id="colorDisplay">RGB</span><br> Color Game</h1>
-<div id="stripe">
-  <button id="reset">New Colors</button>
-  <span id="messageDisplay"></span>
-  <button id="easy">Easy</button>
-  <button id="hard" class="selected">Hard</button>
-</div>
-<div id="squareContainer">
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
+<div id="divContainer">
+	<div id="divHeading">
+		<h1 id="h1heading">To do list <i class="fa fa-plus" id="plusIcon" aria-hidden="true"></i></h1>
+		<input type="text" id="txtTodo" placeholder="Add new task">
+	</div>
+	<div id="divList">
+		<ul id="taskList">
+			<li class="task"><span class="deleteTask"><i class="fa fa-trash-o" aria-hidden="true"></i></span> Buy milk</li>
+			<li class="task"><span class="deleteTask"><i class="fa fa-trash-o" aria-hidden="true"></i></span> Pick up dry cleaning</li>
+			<li class="task"><span class="deleteTask"><i class="fa fa-trash-o" aria-hidden="true"></i></span> Finish website</li>
+		</ul>
+	</div>
 </div>
 
-<script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
+<script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="assets/js/logic.js"></script>
 </body>
 </html>
